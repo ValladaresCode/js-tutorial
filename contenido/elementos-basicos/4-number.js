@@ -27,5 +27,19 @@ const resultado = 0.1 + 0.2 //0.30000000000000004
 //console.log(resultado == 0.3) //false
 //console.log(resultado.toFixed(1))
 
-//4.
+//4. OPERACIONES AVANZADAS
+const raizCuadrada = Math.sqrt(16) //4
+const valorAbsoluto = Math.abs(-5) //5
+                          //trunc o floor para aproximar a entero
+const aleatorio = Math.trunc( Math.random()*10+10) //numero aleatorio entre 0 y 10
+//console.log(aleatorio)
 
+//5.Lenguajes de programacion
+
+//COMPILADOS: java(JVM -> .java --> .class ---> .jar), C, C++
+//INTERPRETADOS: javascript --> lee mientras ejecuta
+
+const numero = 2
+const boolean = true
+//conversion implicita
+console.log(numero+boolean)
