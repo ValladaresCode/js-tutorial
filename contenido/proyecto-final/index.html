@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ahorcado</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      background: #e0f7fa;
+      color: #004d40;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      margin-top: 30px;
+      color: #00796b;
+    }
+    p {
+      font-size: 1.1em;
+      margin: 10px 0 20px;
+    }
+    canvas {
+      border: 2px solid #004d40;
+      border-radius: 10px;
+      background: #b2dfdb;
+      margin-top: 20px;
+    }
+    #palabra {
+      margin-top: 20px;
+      font-size: 1.5em;
+      letter-spacing: 10px;
+    }
+    #letras {
+      margin-top: 20px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      background-color: #00796b;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover:not(:disabled) {
+      background-color: #004d40;
+    }
+    button:disabled {
+      background-color: #b2dfdb;
+      color: #004d40;
+      cursor: not-allowed;
+    }
+    #mensaje {
+      font-size: 1.3em;
+      margin-top: 20px;
+      font-weight: bold;
+      min-height: 30px;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 15px 0;
+      background-color: #004d40;
+      color: #b2dfdb;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bienvenido al juego de ahorcado de Roger</h1>
+  <p>El juego de ahorcado tiene 7 intentos con 20 posibles palabras, ¡Buena Suerte!</p>
+  <br>
+  <p>Hay 2 botones adicionales:</p>
+  <p>"Reintentar" hace que se reinicien los intentos manteniendo la palabra</p>
+  <p>"Reiniciar" selecciona una nueva palabra y reinicia los intentos</p>
+  <canvas id="ahorcado" width="400" height="400"></canvas>
+  <div id="palabra"></div>
+  <div id="letras"></div>
+  <div id="mensaje"></div>
+
+  <footer>
+    Fundacion Kinal | Roger Steven Valladares Pineda | 2024060
+  </footer>
+
+  <script src="ahorcado.js"></script>
+</body>
+</html>
